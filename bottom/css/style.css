@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: 0;
+}
+
+@font-face {
+  font-family: "TeleGrotesk-Next";
+  src: url("../fonts/TeleGroteskNextMedium.woff2") format("woff2"),
+    url("../fonts/TeleGroteskNextMedium.woff") format("woff"),
+    url("../fonts/TeleGroteskNextMedium.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeleGrotesk-Next";
+  src: url("../fonts/TeleGroteskNextBold.woff2") format("woff2"),
+    url("../fonts/TeleGroteskNextBold.woff") format("woff"),
+    url("../fonts/TeleGroteskNextBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: rgba(226, 0, 116, 1);
+  color: #fff;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) center no-repeat;
+  font-family: "TeleGrotesk-Next", sans-serif;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 5px;
+}
+.logo {
+  width: 70%;
+  display: flex;
+}
+.logo__media {
+  width: 100%;
+}
+.text {
+  text-align: center;
+  font-size: 2.6vw;
+}
+.text span{
+  font-weight: bold;
+  font-size: 3.3vw;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.btn {
+  width: 70%;
+}
+.btn__media {
+  width: 100%;
+}

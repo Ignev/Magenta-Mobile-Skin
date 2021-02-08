@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Banner</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" class="logo__media" />
+        </div>
+        <div class="text">
+          <span>Top-Smartphones um €0*</span> <br />
+          Gratis Aktivierung & Online Express <br />
+          Lieferung!
+        </div>
+      </div>
+      <div class="right">
+          <button class="btn"><img class="btn__media" src="./img/button.png" alt="button"></button>
+      </div>
+    </div>
+    <script></script>
+    <script type="text/javascript">
+      var hellopreloader = document.getElementById("hellopreloader_preload");
+
+      function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function () {
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+          }
+        }, 16);
+      }
+      window.onload = function () {
+        setTimeout(function () {
+          fadeOutnojquery(hellopreloader);
+        }, 1000);
+      };
+
+      window.addEventListener("message", function (event) {
+        var parseData = JSON.parse(event.data);
+      });
+    </script>
+    <script>
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", clickout_1);
+
+      var clickTag = "";
+
+      var dspx_debug = readGETParameter("dspx_debug");
+      function readGETParameter(c) {
+        var o = window.location.search.substring(1);
+        var n = o.split("&");
+        for (var e = 0; e < n.length; e++) {
+          var i = n[e].split("=");
+          if (i[0] == c) {
+            return decodeURIComponent(i[1]);
+          }
+        }
+        return c == "encodelevel" ? 2 : 0;
+      }
+      function fireASCClicks() {
+        var _c = "dspx_clicktagASC",
+          _nn = 5;
+        var cASC = function (c, nn) {
+          var n = window.location.search.substring(1),
+            i = n.split("&");
+          var aa = [];
+          for (var e = 0; e < i.length; e++) {
+            var o = i[e].split("=");
+            for (var ni = 0; ni < nn; ni++) {
+              if (ni == 0) cc = c;
+              else cc = c + ni;
+              if (o[0] == cc) {
+                aa.push(decodeURIComponent(o[1]));
+              }
+            }
+          }
+          return aa;
+        };
+        var ctASC = cASC(_c, _nn);
+        for (i = 0; i < ctASC.length; i++) {
+          if (dspx_debug == 1) console.log("fire Click ASC:" + ctASC[i]);
+          new Image().src = ctASC[i];
+        }
+      }
+
+      function clickout_1() {
+        fireASCClicks();
+        var e = readGETParameter("clicktag") || clickTag;
+        if (dspx_debug == 1) {
+          console.log(e);
+        }
+        window.open(e);
+      }
+
+      function track_vtr(progress) {
+        if (progress == 0) {
+          console.log(progress);
+        } else if (progress == 25) {
+          console.log(progress);
+        } else if (progress == 50) {
+          console.log(progress);
+        } else if (progress == 75) {
+          console.log(progress);
+        } else if (progress == 100) {
+          console.log(progress);
+        }
+      }
+    </script>
+  </body>
+</html>
