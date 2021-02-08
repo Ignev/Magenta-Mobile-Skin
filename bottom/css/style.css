@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "TeleGrotesk-Next";
-  src: url("../fonts/TeleGroteskNextMedium.woff2") format("woff2"),
-    url("../fonts/TeleGroteskNextMedium.woff") format("woff"),
-    url("../fonts/TeleGroteskNextMedium.ttf") format("truetype");
+  src: url("../fonts/TeleGroteskNextRegular.woff2") format("woff2"),
+    url("../fonts/TeleGroteskNextRegular.woff") format("woff"),
+    url("../fonts/TeleGroteskNextRegular.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
 }

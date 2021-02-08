@@ -11,8 +11,7 @@ $(".slider").slick({
     pauseOnHover: true,
     autoplaySpeed: 3000,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     prevArrow: ".slider__pre",
-    nextArrow: ".slider__next",
-    dots: true
+    nextArrow: ".slider__next"
   });

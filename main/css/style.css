@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "TeleGrotesk-Next";
-  src: url("../fonts/TeleGroteskNextMedium.woff2") format("woff2"),
-    url("../fonts/TeleGroteskNextMedium.woff") format("woff"),
-    url("../fonts/TeleGroteskNextMedium.ttf") format("truetype");
+  src: url("../fonts/TeleGroteskNextRegular.woff2") format("woff2"),
+    url("../fonts/TeleGroteskNextRegular.woff") format("woff"),
+    url("../fonts/TeleGroteskNextRegular.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
 }
@@ -31,6 +31,9 @@ body {
   height: 100%;
   background: rgba(226, 0, 116, 1);
   color: #fff;
+}
+button{
+    outline: 0;
 }
 .container {
   display: flex;
@@ -66,19 +69,28 @@ body {
 .slider{
     position: absolute;
     width: 100%;
-    top: 20%;
+    top: 25%;
+    max-height: 80%;
+    overflow: hidden;
+}
+.slider__text{
+    width: 7%;
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    bottom: 1%;
 }
 .slider__item{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 .slider__img{
-    width: 70%;
+    width: 40%;
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 .img__media{
     width: 100%;
