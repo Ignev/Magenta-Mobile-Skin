@@ -35,6 +35,9 @@ body {
 button{
     outline: 0;
 }
+li{
+    list-style: none;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -73,12 +76,29 @@ button{
     max-height: 80%;
     overflow: hidden;
 }
+.slider__popup{
+    position: absolute;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    height: 89%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    opacity: 0;
+    transition: 1s ease; 
+}
+.slider__popup-active{
+    opacity: 1;
+}
+.popup__list-one{
+    margin-bottom: 20px;
+}
 .slider__text{
     width: 7%;
     display: flex !important;
     justify-content: center;
     position: absolute;
-    bottom: 1%;
+    bottom: 0;
 }
 .slider__item{
     display: flex !important;
@@ -91,10 +111,17 @@ button{
     width: 40%;
     display: flex;
     justify-content: center;
+    
 }
 .img__media{
     width: 100%;
     margin: 0;
+    transform: translateX(0px) rotate(0deg);
+    transition: 1s ease;
+}
+.img__media-active{
+    transform: translateX(-50px) rotate(-25deg);
+    transition: 1s ease;
 }
 .slider__btn{
     position: absolute;
