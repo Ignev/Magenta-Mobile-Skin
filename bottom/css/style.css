@@ -51,7 +51,7 @@ body {
 .logo {
   width: 100px;
   display: flex;
-  height: auto;
+  height: 20px;
 }
 .logo__media {
   width: 100%;
