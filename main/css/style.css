@@ -57,6 +57,7 @@ li{
 .logo {
   width: 60%;
   display: flex;
+  max-height: 15%;
 }
 .logo__media {
   width: 100%;
@@ -124,12 +125,14 @@ li{
     width: 40%;
     display: flex;
     justify-content: center;
+    max-height: 20%;
 }
 .img__media{
     width: 100%;
     margin: 0;
     transform: translateX(0px) rotate(0deg);
     transition: 1s ease;
+    height: 100%;
 }
 .img__media-active{
     transform: translateX(-50px) rotate(-25deg);
