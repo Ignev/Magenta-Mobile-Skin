@@ -132,8 +132,8 @@ li{
     transition: 1s ease;
 }
 #img__media4{
-  margin-top: 20px;
-  transform: scale(1.05);
+  height: 252px;
+  width: auto;
 }
 .img__media-active{
     transform: translateX(-50px) rotate(-25deg);
