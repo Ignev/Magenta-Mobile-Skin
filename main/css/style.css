@@ -131,10 +131,6 @@ li{
     transform: translateX(0px) rotate(0deg);
     transition: 1s ease;
 }
-#img__media4{
-  height: 252px;
-  width: auto;
-}
 .img__media-active{
     transform: translateX(-50px) rotate(-25deg);
     transition: 1s ease;
