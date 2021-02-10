@@ -87,6 +87,9 @@ li{
     opacity: 0;
     transition: 1s ease; 
 }
+#slider__popup1{
+  height: 86%;
+}
 #slider__popup3{
   height: 80%;
 }
