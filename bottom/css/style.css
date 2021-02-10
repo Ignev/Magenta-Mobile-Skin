@@ -49,9 +49,9 @@ body {
   padding: 5px;
 }
 .logo {
-  width: 70%;
+  width: 100px;
   display: flex;
-  height: 50%;
+  height: auto;
 }
 .logo__media {
   width: 100%;
