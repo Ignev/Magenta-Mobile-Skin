@@ -80,23 +80,26 @@ li{
     position: absolute;
     background: #fff;
     color: #000;
-    padding: 25px;
+    padding: 10px;
+    padding-right: 30px;
     height: 89%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     opacity: 0;
     transition: 1s ease; 
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .slider__popup-active{
     opacity: 1;
 }
-.popup__list-one{
-    margin-bottom: 20px;
-
-}
 .list-two__item{
   position: relative;
+}
+.popup__list-two:first-child{
+  font-weight: bold;
 }
 .list-two__item::after{
   content: url(../img/ok.svg);
@@ -127,6 +130,10 @@ li{
     margin: 0;
     transform: translateX(0px) rotate(0deg);
     transition: 1s ease;
+}
+#img__media4{
+  margin-top: 20px;
+  transform: scale(1.05);
 }
 .img__media-active{
     transform: translateX(-50px) rotate(-25deg);
