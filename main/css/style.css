@@ -159,6 +159,18 @@ li{
 }
 .btn{
   width: 40%;
+  animation: puls 3s infinite ease;
+}
+@keyframes puls{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 .btn__img{
   width: 100%;
