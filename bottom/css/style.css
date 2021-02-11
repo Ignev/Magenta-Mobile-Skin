@@ -52,7 +52,8 @@ body {
   max-width: 107.25px;
   max-height: 40.5px;
   display: flex;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
+  margin-top: -10px;
 }
 .logo__media {
   width: 100%;
