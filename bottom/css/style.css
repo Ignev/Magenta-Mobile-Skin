@@ -49,8 +49,8 @@ body {
   padding: 5px;
 }
 .logo {
-  width: 107.25px;
-  height: 40.5px;
+  max-width: 107.25px;
+  max-height: 40.5px;
   display: flex;
   margin-bottom: -10px;
 }
