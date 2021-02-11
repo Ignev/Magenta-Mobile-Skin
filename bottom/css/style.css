@@ -58,11 +58,11 @@ body {
 }
 .text {
   text-align: center;
-  font-size: 2.6vw;
+  font-size: 2.3vw;
 }
 .text span{
   font-weight: bold;
-  font-size: 3.3vw;
+  font-size: 3vw;
 }
 .right {
   display: flex;
