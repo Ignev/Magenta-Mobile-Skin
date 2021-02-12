@@ -16,6 +16,7 @@ $(".slider").slick({
   nextArrow: ".slider__next",
 });
 
+
 const items = document.querySelectorAll(".slider__img");
 const phone = document.querySelectorAll(".img__media");
 const popup = document.querySelectorAll(".slider__popup");

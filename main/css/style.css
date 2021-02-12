@@ -112,13 +112,10 @@ li {
   color: black;
   font-size: 10px;
   text-align: center;
-  animation: tapPuls 6s ease;
+  animation: tapPuls 1s infinite ease;
+  transition: 1s ease;
+  visibility: hidden;
   opacity: 0;
-  -ms-transform: scale(1);
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  display: none;
 }
 @keyframes tapPuls {
   0% {
@@ -126,77 +123,18 @@ li {
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
-    opacity: 1;
-  }
-  10% {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  20% {
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  30% {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  40% {
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
   }
   50% {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    opacity: 1;
-  }
-  60% {
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  70% {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  80% {
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  90% {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 0.5;
   }
   100% {
     -ms-transform: scale(1);
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
-    opacity: 0;
   }
 }
 .tap__media {

@@ -263,7 +263,7 @@
       var avgVStart = 0.01;
       var avgVEnd = 0.0;
       var isInterstitial = false;
-
+      var isAnimate = true;
       if (!isInterstitial) {
         window.addEventListener("message", function (event) {
           var parseData = JSON.parse(event.data);
@@ -272,7 +272,16 @@
             parseData.rectangleTop > 0 &&
             parseData.viewablePercent / 100 > avgVStart
           ) {
-            tap.style.display = "block"
+            if(isAnimate){
+              isAnimate = false;
+              tap.style.visibility = "visible";
+              tap.style.opacity = "1";
+              setTimeout(function(){
+                tap.style.opacity = "0";
+                tap.style.visibility = "hidden";
+              }, 6000)
+            }
+            
           }
 
           if (
@@ -287,7 +296,6 @@
       var x_click = document.getElementsByTagName("body")[0];
       x_click.addEventListener("click", () => {
         clickout_1();
-        console.log(1);
       });
 
       var clickTag = "";
