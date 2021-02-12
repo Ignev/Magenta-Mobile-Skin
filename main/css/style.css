@@ -114,6 +114,7 @@ li {
   text-align: center;
   animation: tapPuls 6s ease;
   opacity: 0;
+  z-index: 10;
 }
 @keyframes tapPuls{
   0%{

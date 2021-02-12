@@ -19,7 +19,8 @@ $(".slider").slick({
 const items = document.querySelectorAll(".slider__img");
 const phone = document.querySelectorAll(".img__media");
 const popup = document.querySelectorAll(".slider__popup");
-console.log(phone);
+
+
 
 // items.forEach((it, k) => {
 //   phone.forEach((item, i) => {
@@ -54,6 +55,7 @@ slider__item1.addEventListener("click", (e) => {
   } else {
     slider__popup1.classList.remove("slider__popup-active");
   }
+  tap.style.display = "none";
 });
 slider__item2.addEventListener("click", (e) => {
   e.preventDefault();
