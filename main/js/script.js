@@ -41,7 +41,9 @@ console.log(phone);
 //     })
 //   });
 // });
-slider__item1.addEventListener("click", () => {
+slider__item1.addEventListener("click", (e) => {
+  e.preventDefault();
+	e.stopPropagation();
   if (!img__media1.classList.contains("img__media-active")) {
     img__media1.classList.add("img__media-active");
   } else {
@@ -53,7 +55,9 @@ slider__item1.addEventListener("click", () => {
     slider__popup1.classList.remove("slider__popup-active");
   }
 });
-slider__item2.addEventListener("click", () => {
+slider__item2.addEventListener("click", (e) => {
+  e.preventDefault();
+	e.stopPropagation();
   if (!img__media2.classList.contains("img__media-active")) {
     img__media2.classList.add("img__media-active");
   } else {
@@ -65,7 +69,9 @@ slider__item2.addEventListener("click", () => {
     slider__popup2.classList.remove("slider__popup-active");
   }
 });
-slider__item3.addEventListener("click", () => {
+slider__item3.addEventListener("click", (e) => {
+  e.preventDefault();
+	e.stopPropagation();
   if (!img__media3.classList.contains("img__media-active")) {
     img__media3.classList.add("img__media-active");
   } else {
@@ -77,7 +83,9 @@ slider__item3.addEventListener("click", () => {
     slider__popup3.classList.remove("slider__popup-active");
   }
 });
-slider__item4.addEventListener("click", () => {
+slider__item4.addEventListener("click", (e) => {
+  e.preventDefault();
+	e.stopPropagation();
   if (!img__media4.classList.contains("img__media-active")) {
     img__media4.classList.add("img__media-active");
   } else {

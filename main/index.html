@@ -11,7 +11,7 @@
   <body id="body">
     <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
     <div class="container">
-      <div class="slider">
+      <div class="slider" id="slider">
         <div class="slider__item" id="slider__item1">
           <div class="slider__img">
             <img
@@ -51,6 +51,10 @@
                 <li class="list-two__item">WLAN</li>
               </ul>
             </div>
+          </div>
+          <div class="slider__tap">
+            <img src="./img/tap.png" alt="tap" class="tap__media" />
+            <p class="tap__text">Click</p>
           </div>
           <div class="slider__text">
             <img
@@ -204,11 +208,17 @@
           </div>
         </div>
       </div>
-      <button class="slider__pre slider__btn">
-        <img src="img/pre.svg" alt="pre" class="pre__media" />
+      <button class="slider__pre slider__btn" onclick="event.stopPropagation()">
+        <img src="img/pre.svg" alt="pre" class="pre__media" id="pre__media"/>
       </button>
-      <button class="slider__next slider__btn">
-        <img src="img/next.svg" alt="next" class="next__media" />
+      <button class="slider__next slider__btn" onclick="event.stopPropagation()">
+        <img
+          src="img/next.svg"
+          alt="next"
+          class="next__media"
+          id="next__media"
+          
+        />
       </button>
       <div class="top">
         <div class="logo">
@@ -273,10 +283,13 @@
       }
     </script>
     <script>
-      //   var x_click = document.getElementsByTagName("body")[0];
-      //   x_click.addEventListener("click", clickout_1);
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", () => {
+        clickout_1();
+        console.log(1);
+      });
 
-      //   var clickTag = "";
+      var clickTag = "";
 
       var dspx_debug = readGETParameter("dspx_debug");
       function readGETParameter(c) {

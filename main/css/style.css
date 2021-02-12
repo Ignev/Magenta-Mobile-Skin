@@ -32,11 +32,11 @@ body {
   background: rgba(226, 0, 116, 1);
   color: #fff;
 }
-button{
-    outline: 0;
+button {
+  outline: 0;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 .container {
   display: flex;
@@ -70,83 +70,145 @@ li{
   font-weight: bold;
   font-size: 4vw;
 }
-.slider{
-    position: absolute;
-    width: 100%;
-    top: 20%;
-    max-height: 80%;
-    overflow: hidden;
+.slider {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  max-height: 80%;
+  overflow: hidden;
 }
-.slider__popup{
-    position: absolute;
-    background: #fff;
-    color: #000;
-    padding: 10px;
-    padding-right: 30px;
-    height: 89%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    opacity: 0;
-    transition: 1s ease; 
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.slider__popup {
+  position: absolute;
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  padding-right: 30px;
+  height: 85%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s ease;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 2;
 }
-.slider__popup-active{
-    opacity: 1;
+.slider__popup-active {
+  opacity: 1;
 }
-.list-two__item{
+.list-two__item {
   position: relative;
 }
-.popup__list-two:first-child{
+.popup__list-two:first-child {
   font-weight: bold;
 }
-.list-two__item::after{
+.list-two__item::after {
   content: url(../img/ok.svg);
   position: absolute;
   right: -20px;
 }
-.slider__text{
-    width: 7%;
-    display: flex !important;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
+.slider__tap {
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  animation: tapPuls 6s ease;
+  opacity: 0;
 }
-.slider__item{
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 55px;
+@keyframes tapPuls{
+  0%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  10%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  20%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  30%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  40%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  60%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  70%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80%{
+    transform: scale(1.0);
+    opacity: 0.8;
+  }
+  90%{
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(1.0);
+    opacity: 0;
+  }
 }
-.slider__img{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    max-height: 20%;
+.tap__media {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.img__media{
-    width: 100%;
-    margin: 0;
-    transform: translateX(0px) rotate(0deg);
-    transition: 1s ease;
-    height: 100%;
+.slider__text {
+  width: 7%;
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
 }
-.img__media-active{
-    transform: translateX(-50px) rotate(-25deg);
-    transition: 1s ease;
+.slider__item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 55px;
 }
-.slider__btn{
-    position: absolute;
-    top: 50%;
+.slider__img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  max-height: 20%;
 }
-.slider__pre{
-    left: 5%;
+.img__media {
+  width: 100%;
+  margin: 0;
+  transform: translateX(0px) rotate(0deg);
+  transition: 1s ease;
+  height: 100%;
 }
-.slider__next{
-    right: 5%;
+.img__media-active {
+  transform: translateX(-50px) rotate(-25deg);
+  transition: 1s ease;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+}
+.slider__pre {
+  left: 5%;
+}
+.slider__next {
+  right: 5%;
 }
 .bottom {
   height: 30%;
@@ -156,22 +218,23 @@ li{
   align-items: flex-end;
   justify-content: center;
   padding: 10px;
+  padding-bottom: 5px;
 }
-.btn{
+.btn {
   width: 40%;
   animation: puls 3s infinite ease;
 }
-@keyframes puls{
-  0%{
+@keyframes puls {
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.2);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
-.btn__img{
+.btn__img {
   width: 100%;
 }
